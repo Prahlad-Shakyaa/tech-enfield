@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Tech Enfield - Premium Software & Mobile Development Solutions in Chitwan, Nepal">
+    <meta name="author" content="Bibek Thapa Magar">
+    <meta name="keywords"
+        content="tech enfield, software development, mobile app development, web development, nepal, chitwan, custom software solutions, IT services">
+    <title>Tech Enfield | Premium Software & Mobile Development in Nepal</title>
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --secondary-color: #8338ec;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .brand-color {
+            color: var(--primary-color);
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .slogan {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            margin: 0 0.5rem;
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 0.5rem 2rem;
+            font-weight: 500;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2a75e6;
+            border-color: #2a75e6;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .tech-stack img {
+            height: 50px;
+            margin: 0 1rem;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-stack img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .contact-info i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+        }
+        
+        footer a {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        .social-icon {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            color: #adb5bd;
+            transition: color 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .slogan {
+                font-size: 2.5rem;
+            }
+            
+            .hero-img {
+                max-height: 300px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand brand-name brand-color" href="#">
+                <img src="assets/img/logo.png" alt="TechEnfield Logo" height="40" class="d-inline-block align-top me-2">
+                TechEnfield
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start py-5">
+                    <h1 class="slogan mb-0">We take the <span class="brand-color">Tech</span></h1>
+                    <h1 class="slogan mt-n3">up to your <span class="brand-color">Work Field</span></h1>
+                    <p class="lead my-4">Delivering cutting-edge software solutions to transform your business and drive digital innovation.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">Get Started</a>
+                        <a href="#services" class="btn btn-outline-primary btn-lg px-4">Our Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mb-4 mb-lg-0">
+                    <img src="assets/img/svg/hero-illustration.svg" alt="Tech Illustration" class="img-fluid hero-img" style="max-height: 450px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">About <span class="brand-color">Tech Enfield</span></h2>
+                    <p class="lead">We are a premier software development company based in Chitwan, Nepal, dedicated to delivering exceptional digital solutions.</p>
+                    <p>Founded in 2023 by a team of experienced IT professionals, Tech Enfield has quickly established itself as a trusted partner for businesses seeking innovative technology solutions. Our mission is to bridge the gap between cutting-edge technology and practical business applications.</p>
+                    <p>What sets us apart is our commitment to quality, our customer-centric approach, and our ability to understand and solve complex business challenges through technology.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <div class="text-center">
+                            <h3 class="brand-color">50+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="brand-color">100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="brand-color">24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/img/about-us.jpg" alt="About Tech Enfield" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            
+            <!-- Tech Stack -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>Our Technology Stack</h3>
+                    <p class="text-muted">We work with the latest technologies to deliver robust solutions</p>
+                </div>
+                <div class="col-12 d-flex flex-wrap justify-content-center tech-stack">
+                    <img src="assets/img/tech/html5.svg" alt="HTML5" title="HTML5">
+                    <img src="assets/img/tech/css3.svg" alt="CSS3" title="CSS3">
+                    <img src="assets/img/tech/javascript.svg" alt="JavaScript" title="JavaScript">
+                    <img src="assets/img/tech/react.svg" alt="React" title="React">
+                    <img src="assets/img/tech/nodejs.svg" alt="Node.js" title="Node.js">
+                    <img src="assets/img/tech/python.svg" alt="Python" title="Python">
+                    <img src="assets/img/tech/django.svg" alt="Django" title="Django">
+                    <img src="assets/img/tech/flutter.svg" alt="Flutter" title="Flutter">
+                    <img src="assets/img/tech/mysql.svg" alt="MySQL" title="MySQL">
+                    <img src="assets/img/tech/mongodb.svg" alt="MongoDB" title="MongoDB">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>Our <span class="brand-color">Services</span></h2>
+                    <p class="lead">Comprehensive digital solutions tailored to your business needs</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Custom Software Development</h4>
+                        <p>Tailored software solutions designed to streamline your business operations, improve efficiency, and drive growth.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> Enterprise Applications</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Business Process Automation</li>
+                            <li><i class="fas fa-check text-success me-2"></i> CRM & ERP Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>Responsive, high-performance websites that engage visitors and convert them into customers.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> E-commerce Platforms</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Content Management Systems</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Progressive Web Apps</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile App Development</h4>
+                        <p>Cross-platform mobile applications that deliver seamless user experiences across all devices.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> iOS & Android Apps</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Hybrid App Development</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Enterprise Mobility Solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h4>Cloud Solutions</h4>
+                        <p>Scalable cloud infrastructure and services to modernize your IT environment.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> Cloud Migration</li>
+                            <li><i class="fas fa-check text-success me-2"></i> SaaS Development</li>
+                            <li><i class="fas fa-check text-success me-2"></i> DevOps & CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>UI/UX Design</h4>
+                        <p>Beautiful, intuitive interfaces that enhance user engagement and satisfaction.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> User Research</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Wireframing & Prototyping</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Interaction Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>IT Consulting</h4>
+                        <p>Expert guidance to help you navigate digital transformation and technology adoption.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> Technology Strategy</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Digital Transformation</li>
+                            <li><i class="fas fa-check text-success me-2"></i> IT Infrastructure Planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>Our <span class="brand-color">Work</span></h2>
+                    <p class="lead">Explore some of our successful projects</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/img/portfolio/merogrocery.jpg" class="card-img-top" alt="Mero Grocery App">
+                        <div class="card-body">
+                            <h5 class="card-title">Mero Grocery</h5>
+                            <p class="card-text">A credit transaction management app designed to overcome the drawbacks of traditional book keeping systems for small grocery businesses.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://merogrocery.techenfield.com/storage/app-release.apk" class="btn btn-sm btn-outline-primary">Download App</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/img/portfolio/ecommerce.jpg" class="card-img-top" alt="E-commerce Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">NepalMart</h5>
+                            <p class="card-text">A comprehensive e-commerce platform connecting Nepali producers with global customers, featuring multi-vendor support and secure payments.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="assets/img/portfolio/erp.jpg" class="card-img-top" alt="ERP System">
+                        <div class="card-body">
+                            <h5 class="card-title">BizERP</h5>
+                            <p class="card-text">Custom enterprise resource planning solution for medium-sized businesses, integrating inventory, accounting, HR, and CRM modules.</p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <a href="#" class="btn btn-primary px-4">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2>What Our <span class="brand-color">Clients Say</span></h2>
+                    <p class="lead">We measure our success by the success of our clients</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Tech Enfield transformed our outdated systems into a modern, efficient platform. Their team was professional, knowledgeable, and delivered beyond our expectations."</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 d-flex align-items-center">
+                            <img src="assets/img/testimonials/client1.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">Rajesh Shrestha</h6>
+                                <small class="text-muted">CEO, Himalayan Enterprises</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"The mobile app developed by Tech Enfield has significantly improved our customer engagement. Their attention to detail and user experience focus is exceptional."</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 d-flex align-items-center">
+                            <img src="assets/img/testimonials/client2.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">Priya Gurung</h6>
+                                <small class="text-muted">Marketing Director, Namaste Retail</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 p-4 testimonial-card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"As a startup, we needed a technology partner who could grow with us. Tech Enfield has been instrumental in scaling our digital infrastructure efficiently."</p>
+                        </div>
+                        <div class="card-footer bg-white border-0 d-flex align-items-center">
+                            <img src="assets/img/testimonials/client3.jpg" alt="Client" class="rounded-circle me-3" width="50">
+                            <div>
+                                <h6 class="mb-0">Amit Chaudhary</h6>
+                                <small class="text-muted">Founder, AgroTech Nepal</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mb-4">Get In <span class="brand-color">Touch</span></h2>
+                    <p class="lead">Have a project in mind or want to discuss how we can help your business?</p>
+                    <p>Fill out the form and our team will get back to you within 24 hours. We're excited to hear about your ideas and explore how we can bring them to life.</p>
+                    
+                    <div class="mt-5">
+                        <div class="d-flex align-items-center mb-4 contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5 class="mb-0">Our Office</h5>
+                                <p class="mb-0">Narayangarh, Chitwan, Nepal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-4 contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5 class="mb-0">Email Us</h5>
+                                <p class="mb-0">info@techenfield.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-4 contact-info">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h5 class="mb-0">Call Us</h5>
+                                <p class="mb-0">+977 9841234567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <form action="mailtrap.php" method="post" class="shadow-sm bg-white p-4 rounded">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Project Inquiry">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <div class="g-recaptcha" data-sitekey="6Lc8E_IqAAAAAPJaPzfg4ttH1oVgfZ8nI_SQQTk9"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4 class="brand-name brand-color mb-3">Tech Enfield</h4>
+                    <p>Transforming businesses through innovative technology solutions. We're committed to delivering excellence and driving digital transformation.</p>
+                    <div class="d-flex mt-4">
+                        <a href="https://www.facebook.com/profile.php?id=61564425882690" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/tech.enfield/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white-50">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white-50">About Us</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white-50">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white-50">Portfolio</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50">Custom Software</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Mobile Apps</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">UI/UX Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">IT Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Narayangarh, Chitwan, Nepal</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i> info@techenfield.com</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i> +977 9841234567</li>
+                        <li class="mb-2"><i class="bi bi-clock-fill me-2"></i> Sun-Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4 bg-secondary">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Tech Enfield. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by Tech Enfield Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow');
+                navbar.classList.add('bg-white');
+                navbar.classList.remove('bg-light');
+            } else {
+                navbar.classList.remove('shadow');
+                navbar.classList.add('bg-light');
+                navbar.classList.remove('bg-white');
+            }
+        });
+    </script>
+</body>
+</html>

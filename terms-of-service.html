@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Terms of Service - Tech Enfield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 
+        Chosen Palette: Calm Harmony (Slate, Sky, White)
+        Application Structure Plan: A two-column layout is used to make the dense legal text navigable. A fixed sidebar on the left contains links that smoothly scroll to the corresponding sections on the right. This allows users to see the policy structure at a glance and jump directly to the information they need, avoiding the fatigue of scrolling through a long, linear document. The active section is highlighted in the navigation, providing clear visual feedback. This structure prioritizes findability and user control.
+        Visualization & Content Choices: 
+        - Report Info: Entire Terms of Service -> Goal: Improve Navigability & Readability -> Viz/Presentation: Two-column layout with fixed side-nav and scroll-spy functionality -> Interaction: Clicking nav links smoothly scrolls to a section; scrolling the main content updates the active nav link. -> Justification: This is a standard and highly effective pattern for documentation, making it feel like an interactive application rather than a static page. -> Library/Method: Tailwind CSS for layout, Vanilla JS for all interactions.
+        - Report Info: Sections 2, 3, 6, 7 (Lists) -> Goal: Make lists scannable -> Viz/Presentation: Styled lists with custom unicode icons. -> Interaction: Static display. -> Justification: Icons and spacing make the lists less monotonous and easier to parse. -> Library/Method: Tailwind CSS.
+        CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .active-nav {
+            color: #0284c7;
+            background-color: #e0f2fe;
+            font-weight: 600;
+        }
+        main {
+            height: 100vh;
+            overflow-y: auto;
+        }
+        @media (max-width: 767px) {
+            main {
+                height: auto;
+                overflow-y: visible;
+            }
+            .sidebar {
+                position: static;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        
+        <!-- <aside class="sidebar w-full md:w-64 lg:w-72 bg-slate-50 border-b md:border-b-0 md:border-r border-slate-200 p-6 sticky top-0 h-auto md:h-screen">
+            <h1 class="text-xl font-bold text-slate-800">Tech Enfield</h1>
+            <h2 class="text-sm text-slate-500 mb-8">Terms of Service</h2>
+            
+            <nav id="terms-nav">
+                <ul class="space-y-1">
+                    <li><a href="#section-1" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">1. Acceptance of Terms</a></li>
+                    <li><a href="#section-2" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">2. Services Provided</a></li>
+                    <li><a href="#section-3" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">3. User Responsibilities</a></li>
+                    <li><a href="#section-4" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">4. Intellectual Property</a></li>
+                    <li><a href="#section-5" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">5. Links To Other Web Sites</a></li>
+                    <li><a href="#section-6" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">6. Disclaimer of Warranties</a></li>
+                    <li><a href="#section-7" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">7. Limitation Of Liability</a></li>
+                    <li><a href="#section-8" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">8. Governing Law</a></li>
+                    <li><a href="#section-9" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">9. Changes To These Terms</a></li>
+                    <li><a href="#section-10" class="block py-2 px-3 rounded-md text-slate-600 hover:bg-slate-200 transition-colors duration-200 text-sm">10. Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside> -->
+
+        <main id="main-content" class="flex-1 p-6 md:p-10 lg:p-12">
+            <div class="max-w-4xl mx-auto">
+                
+                <header class="mb-12">
+                    <h1 class="text-4xl font-bold text-slate-900 mb-2">Terms of Service</h1>
+                    <p class="text-slate-500">Effective Date: June 20, 2025</p>
+                    <p class="mt-4 text-slate-600">Welcome to Tech Enfield! These Terms of Service ("Terms") govern your use of the website techenfield.com (the "Site") and the services provided by Tech Enfield ("we," "our," or "us"). By accessing or using our Site and services, you agree to be bound by these Terms.</p>
+                </header>
+
+                <div id="terms-content" class="space-y-12">
+
+                    <section id="section-1">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">1. Acceptance of Terms</h2>
+                        <p class="text-slate-600 mt-4">This section explains that using our site means you agree to these terms. These Terms constitute a legally binding agreement between you and Tech Enfield. Your access to and use of the Site and services is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and others who access or use the Site or services. If you disagree with any part of the terms, then you may not access the Site or use our services.</p>
+                    </section>
+
+                    <section id="section-2">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">2. Services Provided</h2>
+                        <p class="text-slate-600 mt-4 mb-6">This section gives an overview of what we do. Tech Enfield is a software and mobile app development company based in Chitwan, Nepal. We provide a range of IT solutions, including but not limited to:</p>
+                        <ul class="space-y-3 pl-5 list-disc text-slate-600">
+                            <li>Custom Software Development</li>
+                            <li>Mobile App Development (iOS & Android)</li>
+                            <li>Web Development</li>
+                            <li>Digital Transformation Consulting</li>
+                            <li>Cloud Solutions</li>
+                            <li>Cybersecurity Consulting</li>
+                        </ul>
+                         <p class="text-slate-600 mt-4">Details of our services are available on our Site. The scope of services for any specific project will be outlined in a separate, formal agreement (e.g., a Service Agreement or Contract) entered into between Tech Enfield and the client.</p>
+                    </section>
+                    
+                    <section id="section-3">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">3. User Responsibilities</h2>
+                        <p class="text-slate-600 mt-4 mb-6">This section outlines your responsibilities when using our site. By using our Site and services, you agree to:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-sky-600 mr-3 mt-1 font-bold">&rarr;</span><span>Use the Site and services only for lawful purposes and in a manner that does not infringe the rights of, or restrict or inhibit the use and enjoyment of the Site by any third party.</span></li>
+                            <li class="flex items-start"><span class="text-sky-600 mr-3 mt-1 font-bold">&rarr;</span><span>Provide accurate, current, and complete information when filling out contact forms or interacting with our team.</span></li>
+                            <li class="flex items-start"><span class="text-sky-600 mr-3 mt-1 font-bold">&rarr;</span><span>Not engage in any activity that could harm, disable, overburden, or impair the Site.</span></li>
+                            <li class="flex items-start"><span class="text-sky-600 mr-3 mt-1 font-bold">&rarr;</span><span>Not attempt to gain unauthorized access to any portion or feature of the Site.</span></li>
+                        </ul>
+                    </section>
+
+                    <section id="section-4">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">4. Intellectual Property</h2>
+                        <p class="text-slate-600 mt-4">This section clarifies who owns the content and products. The Site and its original content, features, and functionality are and will remain the exclusive property of Tech Enfield and its licensors. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Tech Enfield.</p>
+                        <p class="text-slate-600 mt-4">Any custom software, mobile applications, or other digital solutions developed by Tech Enfield for clients will have intellectual property rights governed by the specific service agreement or contract between Tech Enfield and the client.</p>
+                    </section>
+
+                    <section id="section-5">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">5. Links To Other Web Sites</h2>
+                        <p class="text-slate-600 mt-4">This section details our policy on third-party links. Our Site may contain links to third-party web sites or services that are not owned or controlled by Tech Enfield. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+                    </section>
+
+                    <section id="section-6">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">6. Disclaimer of Warranties</h2>
+                        <p class="text-slate-600 mt-4 mb-6">This section is a standard legal disclaimer. Your use of the Site is at your sole risk. The Site and services are provided on an "AS IS" and "AS AVAILABLE" basis. Tech Enfield expressly disclaims all warranties of any kind. Tech Enfield does not warrant that:</p>
+                        <ul class="space-y-3 pl-5 list-disc text-slate-600">
+                           <li>The Site will function uninterrupted, secure, or available at any particular time or location.</li>
+                           <li>Any errors or defects will be corrected.</li>
+                           <li>The Site is free of viruses or other harmful components.</li>
+                           <li>The results of using the Site will meet your requirements.</li>
+                        </ul>
+                    </section>
+                    
+                    <section id="section-7">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">7. Limitation Of Liability</h2>
+                        <p class="text-slate-600 mt-4 mb-6">This section limits our legal liability. In no event shall Tech Enfield, nor its directors or employees, be liable for any indirect, incidental, special, consequential or punitive damages resulting from:</p>
+                        <ul class="space-y-3 pl-5 list-disc text-slate-600">
+                           <li>Your access to or use of or inability to access or use the Site.</li>
+                           <li>Any conduct or content of any third party on the Site.</li>
+                           <li>Any content obtained from the Site.</li>
+                           <li>Unauthorized access, use or alteration of your transmissions or content.</li>
+                        </ul>
+                    </section>
+
+                    <section id="section-8">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">8. Governing Law</h2>
+                        <p class="text-slate-600 mt-4">This section specifies the legal jurisdiction. These Terms shall be governed and construed in accordance with the laws of Nepal, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.</p>
+                    </section>
+
+                    <section id="section-9">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">9. Changes To These Terms</h2>
+                        <p class="text-slate-600 mt-4">This section explains how we handle updates to these terms. We reserve the right to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. By continuing to access or use our Site or services after those revisions become effective, you agree to be bound by the revised terms.</p>
+                    </section>
+
+                    <section id="section-10">
+                        <h2 class="text-2xl font-bold text-slate-800 border-b pb-2">10. Contact Us</h2>
+                        <p class="text-slate-600 mt-4 mb-6">This section provides ways to get in touch if you have questions about these terms.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                             <a href="mailto:info@techenfield.com" class="flex-1 bg-white p-4 rounded-lg border border-slate-200 hover:border-sky-500 hover:bg-sky-50 transition-colors duration-200 text-center">
+                                <span class="block text-xl font-semibold text-sky-600">✉️</span>
+                                <span class="block mt-1 font-medium text-slate-700">Email Us</span>
+                                <span class="block text-sm text-slate-500">info@techenfield.com</span>
+                            </a>
+                            <a href="https://techenfield.com/#contact" target="_blank" class="flex-1 bg-white p-4 rounded-lg border border-slate-200 hover:border-sky-500 hover:bg-sky-50 transition-colors duration-200 text-center">
+                                <span class="block text-xl font-semibold text-sky-600">🌐</span>
+                                <span class="block mt-1 font-medium text-slate-700">Visit Our Website</span>
+                                <span class="block text-sm text-slate-500">techenfield.com/#contact</span>
+                            </a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('#terms-content section');
+            const navLinks = document.querySelectorAll('#terms-nav a');
+            const nav = document.getElementById('terms-nav');
+            const mainContent = document.getElementById('main-content');
+
+            function changeNavOnScroll() {
+                let currentSectionId = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    // The offset accounts for the padding/margin at the top of the main content area
+                    if (mainContent.scrollTop >= sectionTop - 80) { 
+                       currentSectionId = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active-nav');
+                    const href = link.getAttribute('href').substring(1);
+                    if (href === currentSectionId) {
+                        link.classList.add('active-nav');
+                    }
+                });
+            }
+
+            mainContent.addEventListener('scroll', changeNavOnScroll);
+            
+            nav.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A') {
+                    e.preventDefault();
+                    const targetId = e.target.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        const headerOffset = 70; // An offset to account for sticky headers or top margin
+                        const elementPosition = targetElement.offsetTop;
+                        const offsetPosition = elementPosition - headerOffset;
+                        
+                        mainContent.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+            
+            // Initial check on load
+            changeNavOnScroll();
+        });
+    </script>
+</body>
+</html>
