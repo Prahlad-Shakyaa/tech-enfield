@@ -24,14 +24,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
-
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -39,31 +38,155 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand brand-name brand-color" href="#home">
-                <img src="./logo.jpeg" class="nav-logo">
+            <!-- Center logo -->
+            <a class="" href="index.html">
+                <img src="./logo.jpeg" alt="Logo" class="logo" />
             </a>
+            <!-- Left-aligned nav items -->
+            <ul class="navbar-nav d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="websitedevelopment.html">Wesite Developement</a></li>
+                        <li><a class="dropdown-item" href="customwebapplication.html">Custom Web Application</a></li>
+                        <li><a class="dropdown-item" href="landingpage.html">Landing Page Design</a></li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                        <li><a class="dropdown-item" href="socialmediamanagement.html">Social Media Management</a></li>
+                        <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+                    </ul>
+                </li>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">REVIEWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">CONTACT US</a>
+                </li>
+            </ul>
+            <!-- Right-aligned nav items -->
+            <div class="nav-btn">
+                <!-- <a class="icons" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icons" href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="tel:9765020882" class="main-btn"><i class="fa-solid fa-phone"></i> 9765020882 </a>
+            </div>
+
+            <!-- Mobile nav toggler -->
+            <div class="mobile-nav-bar d-block col-6 d-lg-none">
+                <div class="mobile-nav-wrap">
+                    <div id="hamburger">
+                        <i class="las la-bars"></i>
+                    </div>
+                    <!-- mobile menu - responsive menu  -->
+                    <div class="mobile-nav">
+                        <button type="button" class="close-nav">
+                            <i class="las la-times-circle"></i>
+                        </button>
+                        <nav class="sidebar-nav">
+                            <ul class="metismenu" id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a class="navlink" href="index.html">HOME </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="aboutus.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <a class="navlink has-arrow" href="javascript:">
+                                            SERVICES</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="customluxuryhomes.html">Custom Luxury
+                                                    Homes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item has-arrow" href="#">Concrete</a>
+                                                <ul class="dropdown-menusub">
+                                                    <li>
+                                                        <a class="dropdown-item" href="groundslabs.html">Ground
+                                                            Slabs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="suspendedslabs.html">Suspended
+                                                            Slabs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="stairs.html">Stairs</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="walls.html">Walls</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="columns.html">Columns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="driveways.html">Driveways</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="publicdomainworks.html">Public
+                                                            Domain Works</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="architecturalconcrete.html">Architectural Concrete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="frppackage.html">FRP Package</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a class="dropdown-item has-arrow" href="#">SDA Builds</a>
+                                                    <ul class="dropdown-menusub">
+                                                        <li>
+                                                            <a class="dropdown-item" href="sdamodifications.html">SDA
+                                                                Modifications</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="" href="projects.html">PROJECTS</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="reviews.html">REVIEWS</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="contactus.html">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </nav>
+                        <div class="action-bar">
+                            <a href="mailto:info@mocorpconstruction.com"><i class="las la-envelope"></i>
+                                info@mocorpconstruction.com
+                            </a>
+                            <a href="tel:0482 633 541"><i class="fal fa-phone"></i>0482 633 541</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
             </div>
         </div>
     </nav>
@@ -74,7 +197,7 @@
         <div class="breadcrumb-overlay"></div>
         <div class="container">
             <div class="breadcrumb">
-                <h1>Seach Engine Optimization</h1>
+                <h1>Search Engine Optimization</h1>
             </div>
             <div class="breadcrumb-navigation">
                 <a href="index.html">HOME</a>
@@ -83,172 +206,331 @@
         </div>
     </div>
 
-    <div class="services">
+    <div class="services pt-100 aa">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <!-- Sticky sidebar -->
+                <div class="col-lg-3 sticky-col">
                     <div class="services-nav">
                         <h5>Our Services</h5>
-                        <p>Website Development</p>
-                        <p>Landing Page Design</p>
-                        <p>Custom Web Application Development</p>
-                        <p>Search Engine Optimization (SEO)</p>
-                        <p>Social Media Management</p>
+                        <p><a href="websitedevelopment.html">Website Development</a></p>
+                        <p><a href="landingpage.html">Landing Page Design</a></p>
+                        <p><a href="customwebapplication.html">Custom Web Application
+                                Development</a></p>
+                        <p class="services-nav-active"><a href="seo.html">Search Engine Optimization (SEO)</a></p>
+                        <p class="nav-bottom"><a href="socialmediamanagement.html">Social Media Management</a></p>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="services-intro">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="services-intro-contents">
-                                    <h5>Service</h5>
-                                    <h1>Search Engine Optimization (SEO)</h1>
-                                    <p>At Tech Enfield, we help your website rank higher on search engines, attract more
-                                        organic traffic, and reach your target audience effectively.</p>
-                                    <p>Whether you’re a startup, small business, or enterprise, our SEO strategies are
-                                        tailored to improve visibility, drive engagement, and increase conversions.</p>
+                    <div class="services-content">
+                        <div class="services-intro">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services-intro-contents">
+                                        <h5>Service</h5>
+                                        <h1>Search Engine Optimization (SEO)</h1>
+                                        <p>At Tech Enfield, we help your website rank higher on search engines, attract
+                                            more
+                                            organic traffic, and reach your target audience effectively.</p>
+                                        <p>Whether you’re a startup, small business, or enterprise, our SEO strategies
+                                            are
+                                            tailored to improve visibility, drive engagement, and increase conversions.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="services-intro-img">
-                                    <img src="../images/seo.jpg" alt="Search Engine Optimization (SEO)">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-offer">
-                        <h2>What We Offer</h2>
-                        <p>We provide comprehensive SEO solutions designed to improve your website’s visibility, drive
-                            organic traffic, and boost conversions.</p>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>On-Page SEO</h5>
-                                    <p>Optimizing your website’s content, meta tags, headings, and structure to rank
-                                        higher in search engines.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Off-Page SEO</h5>
-                                    <p>Building high-quality backlinks and improving domain authority to strengthen your
-                                        site’s credibility.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Technical SEO</h5>
-                                    <p>Ensuring fast loading speed, mobile-friendliness, and proper indexing to enhance
-                                        search engine performance.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Keyword Research & Strategy</h5>
-                                    <p>Identifying and targeting the right keywords to attract relevant traffic and
-                                        improve rankings.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Content Optimization</h5>
-                                    <p>Improving website content to make it SEO-friendly, engaging, and valuable to your
-                                        audience.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Analytics & Reporting</h5>
-                                    <p>Monitoring performance, tracking metrics, and providing actionable insights for
-                                        continuous improvement.</p>
+                                <div class="col-lg-6">
+                                    <div class="services-intro-img">
+                                        <img src="./images/seo.jpg" alt="Search Engine Optimization (SEO)">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="services-why-choose-us">
-                        <h2>Why Choose Us?</h2>
-                        <p>We provide SEO strategies that improve visibility, drive traffic, and increase conversions.
-                            Here’s why we stand out:</p>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    <h3>Proven SEO Expertise</h3>
-                                    <p>Our team has experience optimizing websites across industries to achieve higher
-                                        search rankings.</p>
+                        <div class="services-offer pt-100">
+                            <h2>What We Offer</h2>
+                            <p>We provide comprehensive SEO solutions designed to improve your website’s visibility,
+                                drive
+                                organic traffic, and boost conversions.</p>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-4 services-offer-1">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/on-page-seo.png" alt="">
+                                        <h5>On-Page SEO</h5>
+                                        <p>Optimizing your website’s content, meta tags, headings, and structure to rank
+                                            higher in search engines.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-search"></i>
-                                    <h3>Customized Strategies</h3>
-                                    <p>We create SEO strategies tailored to your business goals, target audience, and
-                                        competitive landscape.</p>
+                                <div class="col-lg-4 services-offer-2">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/off-page-seo.png" alt="">
+                                        <h5>Off-Page SEO</h5>
+                                        <p>Building high-quality backlinks and improving domain authority to strengthen
+                                            your
+                                            site’s credibility.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-headset"></i>
-                                    <h3>Continuous Support</h3>
-                                    <p>We monitor performance, provide regular reports, and adjust strategies to ensure
-                                        ongoing success.</p>
+                                <div class="col-lg-4 services-offer-3">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/technical-seo.png" alt="">
+                                        <h5>Technical SEO</h5>
+                                        <p>Ensuring fast loading speed, mobile-friendliness, and proper indexing to
+                                            enhance
+                                            search engine performance.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-process">
-                        <h2>Our Process</h2>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">1</span>
-                                    <h3>Website Audit</h3>
-                                    <p>Analyzing your website’s current performance, structure, and SEO issues to
-                                        identify improvement areas.</p>
+                                <div class="col-lg-4 services-offer-4">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/keyword-search.png" alt="">
+                                        <h5>Keyword Research & Strategy</h5>
+                                        <p>Identifying and targeting the right keywords to attract relevant traffic and
+                                            improve rankings.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">2</span>
-                                    <h3>Keyword Research</h3>
-                                    <p>Identifying relevant keywords that will drive targeted traffic and improve search
-                                        rankings.</p>
+                                <div class="col-lg-4 services-offer-5">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/content-optimization.png" alt="">
+                                        <h5>Content Optimization</h5>
+                                        <p>Improving website content to make it SEO-friendly, engaging, and valuable to
+                                            your
+                                            audience.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">3</span>
-                                    <h3>On-Page Optimization</h3>
-                                    <p>Optimizing content, meta tags, headings, images, and internal links for better
-                                        search performance.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">4</span>
-                                    <h3>Off-Page Optimization</h3>
-                                    <p>Building quality backlinks, improving domain authority, and enhancing your
-                                        website’s reputation online.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">5</span>
-                                    <h3>Monitoring & Reporting</h3>
-                                    <p>Tracking performance, analyzing results, and making adjustments to continuously
-                                        improve SEO outcomes.</p>
+                                <div class="col-lg-4 services-offer-6">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/seo/report.png" alt="">
+                                        <h5>Analytics & Reporting</h5>
+                                        <p>Monitoring performance, tracking metrics, and providing actionable insights
+                                            for
+                                            continuous improvement.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="services-contact">
-                        📞 Ready to boost your website’s visibility and traffic?
-                        Contact us today and let’s create an SEO strategy that drives results.
-                    </div>
+                        <div class="services-why-choose-us pt-100">
+                            <h2>Why Choose Us?</h2>
+                            <p>We provide SEO strategies that improve visibility, drive traffic, and increase
+                                conversions.
+                                Here’s why we stand out:</p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        <h5>Proven SEO Expertise</h5>
+                                        <p>Our team has experience optimizing websites across industries to achieve
+                                            higher
+                                            search rankings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-search"></i>
+                                        <h5>Customized Strategies</h5>
+                                        <p>We create SEO strategies tailored to your business goals, target audience,
+                                            and
+                                            competitive landscape.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-headset"></i>
+                                        <h5>Continuous Support</h5>
+                                        <p>We monitor performance, provide regular reports, and adjust strategies to
+                                            ensure
+                                            ongoing success.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-process pt-100">
+                            <h2>Our Process</h2>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-4 step-1">
+                                    <div class="service-process-step">
+                                        <span class="step-number">1</span>
+                                        <img src="./icons/services/seo/website-audit.png" alt="">
+                                        <h5>Website Audit</h5>
+                                        <p>Analyzing your website’s current performance, structure, and SEO issues to
+                                            identify improvement areas.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-2">
+                                    <div class="service-process-step">
+                                        <span class="step-number">2</span>
+                                        <img src="./icons/services/seo/keyword.png" alt="">
+                                        <h5>Keyword Research</h5>
+                                        <p>Identifying relevant keywords that will drive targeted traffic and improve
+                                            search
+                                            rankings.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-3">
+                                    <div class="service-process-step">
+                                        <span class="step-number">3</span>
+                                        <img src="./icons/services/seo/on-page.png" alt="">
+                                        <h5>On-Page Optimization</h5>
+                                        <p>Optimizing content, meta tags, headings, images, and internal links for
+                                            better
+                                            search performance.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-4">
+                                    <div class="service-process-step">
+                                        <span class="step-number">4</span>
+                                        <img src="./icons/services/seo/off-page.png" alt="">
+                                        <h5>Off-Page Optimization</h5>
+                                        <p>Building quality backlinks, improving domain authority, and enhancing your
+                                            website’s reputation online.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-5">
+                                    <div class="service-process-step">
+                                        <span class="step-number">5</span>
+                                        <img src="./icons/services/seo/monitoring.png" alt="">
+                                        <h5>Monitoring & Reporting</h5>
+                                        <p>Tracking performance, analyzing results, and making adjustments to
+                                            continuously
+                                            improve SEO outcomes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta pt-50 pb-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h1>Ready to get started?</h1>
+                    <p>
+                        Planning a new project or looking for expert guidance? Our team is here to help. Reach out today
+                        and take the first step toward a seamless, worry-free experience.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="contact.html" class="theme-btn">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./logo/footer-logo.png" class="footer-logo">
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p>At TechEnfield, we transform your digital vision into reality. Our team of experts
+                            delivers
+                            tailored solutions that drive growth, enhance efficiency, and elevate your brand. From
+                            custom web development to AI-driven applications, we combine innovation with precision
+                            to
+                            future-proof your business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="row">
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Quick Links</h6>
+                        <a href="about.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Our Team</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Portfolio</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Careers</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Services</h6>
+                        <a href="./services/websitedevelopment.html">
+                            <p>Website Development</p>
+                        </a>
+                        <a href="./services/landingpage.html">
+                            <p>Landing Page Design</p>
+                        </a>
+                        <a href="./services/customwebapplication.html">
+                            <p>Custom Web App</p>
+                        </a>
+                        <a href="./services/seo.html">
+                            <p>SEO</p>
+                        </a>
+                        <a href="./services/socialmediamanagement.html">
+                            <p>Social Media Management</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Resources</h6>
+                        <a href="about.html">
+                            <p>Blog</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Case Studies</p>
+                        </a>
+                        <a href="about.html">
+                            <p>White Papers</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Support</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Documentation</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-row">
+                        <h6 class="footer-headings">Contact Info</h6>
+                        <a href="">
+                            <p><i class="bi bi-geo-alt me-2"></i>Chitwan, Nepal</p>
+                        </a>
+                        <a href="">
+                            <p><i class="bi bi-envelope me-2"></i>info@techenfield.com</p>
+                        </a>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61564425882690">
+                                <img src="./icons/socials/facebook.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/tech.enfield/">
+                                <img src="./icons/socials/instagram.png" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/company/tech-enfield/">
+                                <img src="./icons/socials/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; Copyright 2025 <span>Tech Enfield.</span> All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy" target="_blank" class="me-3">Privacy Policy</a>
+                        <a href="terms-of-service" target="_blank" class="me-3">Terms of Service</a>
+                        <!-- <a href="#">Cookie Policy</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

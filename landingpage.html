@@ -24,14 +24,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="style.css">
-
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -39,31 +38,155 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="css/index.css">
+
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand brand-name brand-color" href="#home">
-                <img src="./logo.jpeg" class="nav-logo">
+            <!-- Center logo -->
+            <a class="" href="index.html">
+                <img src="./logo.jpeg" alt="Logo" class="logo" />
             </a>
+            <!-- Left-aligned nav items -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="websitedevelopment.html">Wesite Developement</a></li>
+                        <li><a class="dropdown-item" href="customwebapplication.html">Custom Web Application</a></li>
+                        <li><a class="dropdown-item" href="landingpage.html">Landing Page Design</a></li>
+                       
+                        <li><a class="dropdown-item" href="socialmediamanagement.html">Social Media Management</a></li>
+                        <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+                    </ul>
+                </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html">REVIEWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT US</a>
+                </li>
+            </ul>
+            <!-- Right-aligned nav items -->
+            <div class="nav-btn">
+                <!-- <a class="icons" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icons" href="#"><i class="fa-brands fa-instagram"></i></a> -->
+                <a href="tel:9765020882" class="main-btn"><i class="fa-solid fa-phone"></i> 9765020882 </a>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+            <!-- Mobile nav toggler -->
+            <div class="mobile-nav-bar d-block col-6 d-lg-none">
+                <div class="mobile-nav-wrap">
+                    <div id="hamburger">
+                        <i class="las la-bars"></i>
+                    </div>
+                    <!-- mobile menu - responsive menu  -->
+                    <div class="mobile-nav">
+                        <button type="button" class="close-nav">
+                            <i class="las la-times-circle"></i>
+                        </button>
+                        <nav class="sidebar-nav">
+                            <ul class="metismenu" id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a class="navlink" href="index.html">HOME </a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="aboutus.html">ABOUT US</a>
+                                    </li>
+                                    <li>
+                                        <a class="navlink has-arrow" href="javascript:">
+                                            SERVICES</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="customluxuryhomes.html">Custom Luxury
+                                                    Homes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item has-arrow" href="#">Concrete</a>
+                                                <ul class="dropdown-menusub">
+                                                    <li>
+                                                        <a class="dropdown-item" href="groundslabs.html">Ground
+                                                            Slabs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="suspendedslabs.html">Suspended
+                                                            Slabs</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="stairs.html">Stairs</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="walls.html">Walls</a></li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="columns.html">Columns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="driveways.html">Driveways</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="publicdomainworks.html">Public
+                                                            Domain Works</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                            href="architecturalconcrete.html">Architectural Concrete</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="frppackage.html">FRP Package</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a class="dropdown-item has-arrow" href="#">SDA Builds</a>
+                                                    <ul class="dropdown-menusub">
+                                                        <li>
+                                                            <a class="dropdown-item" href="sdamodifications.html">SDA
+                                                                Modifications</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="" href="projects.html">PROJECTS</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="reviews.html">REVIEWS</a>
+                                    </li>
+                                    <li>
+                                        <a class="" href="contact.html">CONTACT US</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </nav>
+                        <div class="action-bar">
+                            <a href="mailto:info@mocorpconstruction.com"><i class="las la-envelope"></i>
+                                info@mocorpconstruction.com
+                            </a>
+                            <a href="tel:0482 633 541"><i class="fal fa-phone"></i>0482 633 541</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
             </div>
         </div>
     </nav>
@@ -78,176 +201,332 @@
             </div>
             <div class="breadcrumb-navigation">
                 <a href="index.html">HOME</a>
-                <p><i class="fa fa-circle"></i> &nbsp;WEBSITE DEVELOPMENT</p>
+                <p><i class="fa fa-circle"></i> &nbsp;LANDING PAGE DESIGN</p>
             </div>
         </div>
     </div>
 
-    <div class="services">
+    <div class="services pt-100 aa">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <!-- Sticky sidebar -->
+                <div class="col-lg-3 sticky-col">
                     <div class="services-nav">
                         <h5>Our Services</h5>
-                        <p>Website Development</p>
-                        <p>Landing Page Design</p>
-                        <p>Custom Web Application Development</p>
-                        <p>Search Engine Optimization (SEO)</p>
-                        <p>Social Media Management</p>
+                        <p><a href="websitedevelopment.html">Website Development</a></p>
+                        <p class="services-nav-active"><a href="landingpage.html">Landing Page Design</a></p>
+                        <p><a href="customwebapplication.html">Custom Web Application Development</a></p>
+                        <p><a href="seo.html">Search Engine Optimization (SEO)</a></p>
+                        <p class="nav-bottom"><a href="socialmediamanagement.html">Social Media Management</a></p>
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <div class="services-intro">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="services-intro-contents">
-                                    <h5>Service</h5>
-                                    <h1>Landing Page Design</h1>
-                                    <p>At Tech Enfield, we create high-converting landing pages that are visually
-                                        appealing, strategically structured, and optimized to achieve your specific
-                                        business goals.</p>
-                                    <p>Whether you’re launching a new product, promoting a service, or running an ad
-                                        campaign, our landing pages are designed to grab attention and drive action.</p>
+                    <div class="services-content">
+                        <div class="services-intro pb-50">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services-intro-contents">
+                                        <h5>Service</h5>
+                                        <h1>Landing Page Design</h1>
+                                        <p>At Tech Enfield, we create high-converting landing pages that are visually
+                                            appealing, strategically structured, and optimized to achieve your specific
+                                            business goals.</p>
+                                        <p>Whether you’re launching a new product, promoting a service, or running an ad
+                                            campaign, our landing pages are designed to grab attention and drive action.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="services-intro-img">
-                                    <img src="../images/landing-page.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-offer">
-                        <h2>What We Offer</h2>
-                        <p>We provide a complete range of landing page design solutions aimed at boosting conversions
-                            and creating a seamless user experience.</p>
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Custom Landing Page Design</h5>
-                                    <p>Unique layouts tailored to match your brand and campaign objectives, making every
-                                        page visually appealing and on-brand.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Conversion-Optimized Structure</h5>
-                                    <p>Strategically placed sections and elements designed to maximize sign-ups, sales,
-                                        or inquiries for your business.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Responsive & Mobile-Friendly</h5>
-                                    <p>Landing pages that look and perform flawlessly across all devices, ensuring a
-                                        consistent experience for every visitor.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Fast Loading Speed</h5>
-                                    <p>Optimized for performance to reduce bounce rates and keep visitors engaged with a
-                                        smooth, fast-loading page.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Clear Call-to-Action (CTA)</h5>
-                                    <p>Eye-catching CTAs guide visitors toward your desired action, whether signing up,
-                                        making a purchase, or requesting more information.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="services-offer-card">
-                                    <h5>Integration with Marketing Tools</h5>
-                                    <p>Seamlessly connect your landing page with email marketing, analytics, and CRM
-                                        platforms to streamline your campaigns.</p>
+                                <div class="col-lg-6">
+                                    <div class="services-intro-img">
+                                        <img src="../images/landing-page.jpg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="services-why-choose-us">
-                        <h2>Why Choose Us?</h2>
-                        <p>We create landing pages that drive results and maximize conversions. Here’s why we stand out:
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-paintbrush"></i>
-                                    <h3>Custom Designs</h3>
-                                    <p>Our landing pages are uniquely designed to match your brand and campaign
-                                        objectives.</p>
+                        <div class="services-offer pt-50 pb-50">
+                            <h2>What We Offer</h2>
+                            <p>We provide a complete range of landing page design solutions aimed at boosting
+                                conversions
+                                and creating a seamless user experience.</p>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-4 services-offer-1">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/custom-landing-page.png" alt="">
+                                        <h5>Custom Landing Page Design</h5>
+                                        <p>Unique layouts tailored to match your brand and campaign objectives, making
+                                            every
+                                            page visually appealing and on-brand.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-bullseye"></i>
-                                    <h3>Conversion-Focused</h3>
-                                    <p>Every element is strategically placed to maximize sign-ups, sales, or inquiries.
-                                    </p>
+                                <div class="col-lg-4 services-offer-2">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/conversion-optimised-structure.png"
+                                            alt="">
+                                        <h5>Conversion-Optimized Structure</h5>
+                                        <p>Strategically placed sections and elements designed to maximize sign-ups,
+                                            sales,
+                                            or inquiries for your business.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="services-why-choose-us-inner">
-                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                    <h3>Responsive & Fast</h3>
-                                    <p>Landing pages perform flawlessly on all devices and load quickly to keep visitors
-                                        engaged.</p>
+                                <div class="col-lg-4 services-offer-3">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/responsive-mobile.png" alt="">
+                                        <h5>Responsive & Mobile-Friendly</h5>
+                                        <p>Landing pages that look and perform flawlessly across all devices, ensuring a
+                                            consistent experience for every visitor.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services-process">
-                        <h2>Our Process</h2>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">1</span>
-                                    <h3>Goal Setting</h3>
-                                    <p>Understanding your campaign objectives and target audience.</p>
+                                <div class="col-lg-4 services-offer-4">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/fast-loading-speed.png" alt="">
+                                        <h5>Fast Loading Speed</h5>
+                                        <p>Optimized for performance to reduce bounce rates and keep visitors engaged
+                                            with a
+                                            smooth, fast-loading page.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">2</span>
-                                    <h3>Design</h3>
-                                    <p>Creating a visually appealing and conversion-focused layout for your landing
-                                        page.</p>
+                                <div class="col-lg-4 services-offer-5">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/call-to-action.png" alt="">
+                                        <h5>Clear Call-to-Action (CTA)</h5>
+                                        <p>Eye-catching CTAs guide visitors toward your desired action, whether signing
+                                            up,
+                                            making a purchase, or requesting more information.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">3</span>
-                                    <h3>Development</h3>
-                                    <p>Building the landing page with responsive design and fast-loading performance.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">4</span>
-                                    <h3>Testing & Launch</h3>
-                                    <p>Ensuring functionality, responsiveness, and conversion elements work flawlessly
-                                        before going live.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="service-process-step">
-                                    <span class="step-number">5</span>
-                                    <h3>Optimization & Support</h3>
-                                    <p>Providing ongoing updates, A/B testing, and performance improvements.</p>
+                                <div class="col-lg-4 services-offer-6">
+                                    <div class="services-offer-card">
+                                        <img src="./icons/services/landing-page/integration.png" alt="">
+                                        <h5>Integration with Marketing Tools</h5>
+                                        <p>Seamlessly connect your landing page with email marketing, analytics, and CRM
+                                            platforms to streamline your campaigns.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="services-contact">
-                        📞 Want a landing page that converts?
-                        Contact us today and let’s turn your visitors into customers.
+                        <div class="services-why-choose-us pt-50">
+                            <h2>Why Choose Us?</h2>
+                            <p>We create landing pages that drive results and maximize conversions. Here’s why we stand
+                                out:
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-paint-brush"></i>
+                                        <h5>Custom Designs</h5>
+                                        <p>Our landing pages are uniquely designed to match your brand and campaign
+                                            objectives.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                        <h5>Conversion-Focused</h5>
+                                        <p>Every element is strategically placed to maximize sign-ups, sales, or
+                                            inquiries.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="services-why-choose-us-inner">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                        <h5>Responsive & Fast</h5>
+                                        <p>Landing pages perform flawlessly on all devices and load quickly to keep
+                                            visitors
+                                            engaged.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-process pt-100">
+                            <h2>Our Process</h2>
+                            <div class="row align-items-stretch">
+                                <div class="col-lg-4 step-1">
+                                    <div class="service-process-step">
+                                        <span class="step-number">1</span>
+                                        <img src="./icons/services/landing-page/goal-setting.png" alt="">
+                                        <h5>Goal Setting</h5>
+                                        <p>Understanding your campaign objectives and target audience.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-2">
+                                    <div class="service-process-step">
+                                        <span class="step-number">2</span>
+                                        <img src="./icons/services/landing-page/design.png" alt="">
+                                        <h5>Design</h5>
+                                        <p>Creating a visually appealing and conversion-focused layout for your landing
+                                            page.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-3">
+                                    <div class="service-process-step">
+                                        <span class="step-number">3</span>
+                                        <img src="./icons/services/landing-page/development.png" alt="">
+                                        <h5>Development</h5>
+                                        <p>Building the landing page with responsive design and fast-loading
+                                            performance.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-4">
+                                    <div class="service-process-step">
+                                        <span class="step-number">4</span>
+                                        <img src="./icons/services/landing-page/testing.png" alt="">
+                                        <h5>Testing & Launch</h5>
+                                        <p>Ensuring functionality, responsiveness, and conversion elements work
+                                            flawlessly
+                                            before going live.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 step-5">
+                                    <div class="service-process-step">
+                                        <span class="step-number">5</span>
+                                        <img src="./icons/services/landing-page/optimization.png" alt="">
+                                        <h5>Optimization & Support</h5>
+                                        <p>Providing ongoing updates, A/B testing, and performance improvements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+
+
+       <!-- CTA Section -->
+    <section class="cta pt-50 pb-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h1>Ready to get started?</h1>
+                    <p>
+                        Planning a new project or looking for expert guidance? Our team is here to help. Reach out today
+                        and take the first step toward a seamless, worry-free experience.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="contact.html" class="theme-btn">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./logo/footer-logo.png" class="footer-logo">
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <p>At TechEnfield, we transform your digital vision into reality. Our team of experts
+                            delivers
+                            tailored solutions that drive growth, enhance efficiency, and elevate your brand. From
+                            custom web development to AI-driven applications, we combine innovation with precision
+                            to
+                            future-proof your business.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="row">
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Quick Links</h6>
+                        <a href="about.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Our Team</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Portfolio</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Careers</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Services</h6>
+                        <a href="./services/websitedevelopment.html">
+                            <p>Website Development</p>
+                        </a>
+                        <a href="./services/landingpage.html">
+                            <p>Landing Page Design</p>
+                        </a>
+                        <a href="./services/customwebapplication.html">
+                            <p>Custom Web App</p>
+                        </a>
+                        <a href="./services/seo.html">
+                            <p>SEO</p>
+                        </a>
+                        <a href="./services/socialmediamanagement.html">
+                            <p>Social Media Management</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-rows">
+                        <h6 class="footer-headings">Resources</h6>
+                        <a href="about.html">
+                            <p>Blog</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Case Studies</p>
+                        </a>
+                        <a href="about.html">
+                            <p>White Papers</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Support</p>
+                        </a>
+                        <a href="about.html">
+                            <p>Documentation</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 footer-row">
+                        <h6 class="footer-headings">Contact Info</h6>
+                        <a href="">
+                            <p><i class="bi bi-geo-alt me-2"></i>Chitwan, Nepal</p>
+                        </a>
+                        <a href="">
+                            <p><i class="bi bi-envelope me-2"></i>info@techenfield.com</p>
+                        </a>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61564425882690">
+                                <img src="./icons/socials/facebook.png" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/tech.enfield/">
+                                <img src="./icons/socials/instagram.png" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/company/tech-enfield/">
+                                <img src="./icons/socials/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; Copyright 2025 <span>Tech Enfield.</span> All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="privacy-policy" target="_blank" class="me-3">Privacy Policy</a>
+                        <a href="terms-of-service" target="_blank" class="me-3">Terms of Service</a>
+                        <!-- <a href="#">Cookie Policy</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
