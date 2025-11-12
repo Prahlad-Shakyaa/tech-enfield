@@ -1402,3 +1402,13 @@ p {
   } */
  
 }
+
+
+
+.form-button{
+  background: var(--bs-primary-color) !important;
+}
+.form-button:hover{
+  background: white !important;
+  color: var(--bs-primary-color);
+}
