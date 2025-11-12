@@ -38,11 +38,16 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- MetisMenu CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.css">
 
+    <!-- Line Awesome for mobile menu icons -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
-     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <!-- Center logo -->
@@ -50,7 +55,7 @@
                 <img src="./logo.jpeg" alt="Logo" class="logo" />
             </a>
             <!-- Left-aligned nav items -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-none d-lg-flex">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">HOME</a>
                 </li>
@@ -63,10 +68,9 @@
                         SERVICES
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="websitedevelopment.html">Wesite Developement</a></li>
+                        <li><a class="dropdown-item" href="websitedevelopment.html">Website Development</a></li>
                         <li><a class="dropdown-item" href="customwebapplication.html">Custom Web Application</a></li>
                         <li><a class="dropdown-item" href="landingpage.html">Landing Page Design</a></li>
-                       
                         <li><a class="dropdown-item" href="socialmediamanagement.html">Social Media Management</a></li>
                         <li><a class="dropdown-item" href="seo.html">SEO</a></li>
                     </ul>
@@ -84,8 +88,6 @@
             </ul>
             <!-- Right-aligned nav items -->
             <div class="nav-btn">
-                <!-- <a class="icons" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="icons" href="#"><i class="fa-brands fa-instagram"></i></a> -->
                 <a href="tel:9765020882" class="main-btn"><i class="fa-solid fa-phone"></i> 9765020882 </a>
             </div>
 
@@ -102,87 +104,38 @@
                         </button>
                         <nav class="sidebar-nav">
                             <ul class="metismenu" id="mobile-menu">
-                                <ul>
-                                    <li>
-                                        <a class="navlink" href="index.html">HOME </a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="aboutus.html">ABOUT US</a>
-                                    </li>
-                                    <li>
-                                        <a class="navlink has-arrow" href="javascript:">
-                                            SERVICES</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="customluxuryhomes.html">Custom Luxury
-                                                    Homes
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item has-arrow" href="#">Concrete</a>
-                                                <ul class="dropdown-menusub">
-                                                    <li>
-                                                        <a class="dropdown-item" href="groundslabs.html">Ground
-                                                            Slabs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="suspendedslabs.html">Suspended
-                                                            Slabs</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="stairs.html">Stairs</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="walls.html">Walls</a></li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="columns.html">Columns</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="driveways.html">Driveways</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="publicdomainworks.html">Public
-                                                            Domain Works</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item"
-                                                            href="architecturalconcrete.html">Architectural Concrete</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="frppackage.html">FRP Package</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <ul class="sub-menu">
-                                                <li>
-                                                    <a class="dropdown-item has-arrow" href="#">SDA Builds</a>
-                                                    <ul class="dropdown-menusub">
-                                                        <li>
-                                                            <a class="dropdown-item" href="sdamodifications.html">SDA
-                                                                Modifications</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="" href="projects.html">PROJECTS</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="reviews.html">REVIEWS</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="contact.html">CONTACT US</a>
-                                    </li>
-                                </ul>
+                                <li>
+                                    <a href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">ABOUT US</a>
+                                </li>
+                                <li>
+                                    <a class="has-arrow" href="javascript:void(0);">SERVICES</a>
+                                    <ul>
+                                        <li><a href="websitedevelopment.html">Website Development</a></li>
+                                        <li><a href="customwebapplication.html">Custom Web Application</a></li>
+                                        <li><a href="landingpage.html">Landing Page Design</a></li>
+                                        <li><a href="socialmediamanagement.html">Social Media Management</a></li>
+                                        <li><a href="seo.html">SEO</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="projects.html">OUR WORK</a>
+                                </li>
+                                <li>
+                                    <a href="reviews.html">REVIEWS</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">CONTACT US</a>
+                                </li>
                             </ul>
                         </nav>
                         <div class="action-bar">
                             <a href="mailto:info@mocorpconstruction.com"><i class="las la-envelope"></i>
                                 info@mocorpconstruction.com
                             </a>
-                            <a href="tel:0482 633 541"><i class="fal fa-phone"></i>0482 633 541</a>
+                            <a href="tel:0482 633 541"><i class="las la-phone"></i>0482 633 541</a>
                         </div>
                     </div>
                 </div>
@@ -199,10 +152,10 @@
             <div class="breadcrumb">
                 <h1>Landing Page Design</h1>
             </div>
-            <div class="breadcrumb-navigation">
+            <!-- <div class="breadcrumb-navigation">
                 <a href="index.html">HOME</a>
                 <p><i class="fa fa-circle"></i> &nbsp;LANDING PAGE DESIGN</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -214,10 +167,10 @@
                     <div class="services-nav">
                         <h5>Our Services</h5>
                         <p><a href="websitedevelopment.html">Website Development</a></p>
-                        <p class="services-nav-active"><a href="landingpage.html">Landing Page Design</a></p>
                         <p><a href="customwebapplication.html">Custom Web Application Development</a></p>
-                        <p><a href="seo.html">Search Engine Optimization (SEO)</a></p>
-                        <p class="nav-bottom"><a href="socialmediamanagement.html">Social Media Management</a></p>
+                        <p class="services-nav-active"><a href="landingpage.html">Landing Page Design</a></p>
+                        <p><a href="socialmediamanagement.html">Social Media Management</a></p>
+                        <p class="nav-bottom"><a href="seo.html">Search Engine Optimization (SEO)</a></p>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -526,7 +479,60 @@
         </div>
     </footer>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- MetisMenu JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/3.0.7/metisMenu.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Initialize MetisMenu
+            $('#mobile-menu').metisMenu();
+
+            // Mobile menu toggle functionality
+            $('#hamburger').on('click', function () {
+                $('.mobile-nav').addClass('open');
+                $('.overlay').addClass('open');
+                $('body').css('overflow', 'hidden');
+            });
+
+            $('.close-nav, .overlay').on('click', function () {
+                $('.mobile-nav').removeClass('open');
+                $('.overlay').removeClass('open');
+                $('body').css('overflow', 'auto');
+            });
+
+            // Close mobile menu when a link is clicked
+            $('.sidebar-nav a').on('click', function () {
+                if (!$(this).hasClass('has-arrow')) {
+                    $('.mobile-nav').removeClass('open');
+                    $('.overlay').removeClass('open');
+                    $('body').css('overflow', 'auto');
+                }
+            });
+
+            // Initialize AOS
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 1000,
+                    easing: 'ease-in-out',
+                    once: true,
+                    mirror: false
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
